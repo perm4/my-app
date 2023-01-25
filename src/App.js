@@ -1,6 +1,7 @@
 import { createRef, useEffect, useMemo, useRef, useState } from 'react';
 import styled from 'styled-components';
 import './App.css';
+import HomePage from './pages/HomePage.js';
 import Sub from './Sub.js';
 
 // 0. React 엔진 - 데이터변경감지해서 UI그려주는 엔진 Virtual Dom
@@ -110,6 +111,7 @@ function App() {
   // 렌더링(rendering) 시점 = 상태값 변경
   return (
     <div>
+      <HomePage />
       <div>
         <Title>이진규</Title>
       </div>
